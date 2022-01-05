@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PordutoItemContainer = styled.section`
   padding-top: 60px;
@@ -17,7 +17,7 @@ export const PordutoItemContainer = styled.section`
 
   h2:after,
   h2:before {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -115,4 +115,4 @@ export const PordutoItemContainer = styled.section`
       padding-top: 14px;
     }
   }
-`;
+`

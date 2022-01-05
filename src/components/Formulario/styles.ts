@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Form } from "formik";
+import styled from 'styled-components'
+import { Form } from 'formik'
 
 export const FormularioComponent = styled(Form)`
   padding-right: 60px;
@@ -7,7 +7,7 @@ export const FormularioComponent = styled(Form)`
   label {
     display: block;
     color: ${(props) => props.theme.color};
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 4px;
@@ -23,7 +23,7 @@ export const FormularioComponent = styled(Form)`
     margin-bottom: 10px;
     outline: none;
     font-size: 14px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 
   textarea {
@@ -37,7 +37,7 @@ export const FormularioComponent = styled(Form)`
     margin-bottom: 20px;
     outline: none;
     font-size: 14px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 
   button {
@@ -49,4 +49,4 @@ export const FormularioComponent = styled(Form)`
     padding-right: 0px;
     margin-bottom: ${(props) => props.theme.mb};
   }
-`;
+`

@@ -1,5 +1,5 @@
-import { Blockquote } from "../../../components/Blockquote";
-import { QuebraComponent } from "./styles";
+import { Blockquote } from '../../../components/Blockquote'
+import { QuebraComponent } from './styles'
 
 export function Quebra() {
   return (
@@ -12,5 +12,5 @@ export function Quebra() {
         <cite>WILLIAM MORRIS</cite>
       </Blockquote>
     </QuebraComponent>
-  );
+  )
 }

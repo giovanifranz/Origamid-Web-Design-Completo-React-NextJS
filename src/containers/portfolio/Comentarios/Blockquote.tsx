@@ -1,8 +1,8 @@
-import { BlockquoteComponent } from "./styles";
+import { BlockquoteComponent } from './styles'
 
 interface BlockquoteProps {
-  text: string;
-  author: string;
+  text: string
+  author: string
 }
 
 export function Blockquote({ text, author }: BlockquoteProps) {
@@ -11,5 +11,5 @@ export function Blockquote({ text, author }: BlockquoteProps) {
       <p>“{text}”</p>
       <cite>{author}</cite>
     </BlockquoteComponent>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { PordutoItemContainer } from "./styles";
+import Image from 'next/image'
+import { PordutoItemContainer } from './styles'
 
 interface ProdutoItemProps {
-  type: "esporte" | "passeio" | "retro";
+  type: 'esporte' | 'passeio' | 'retro'
 }
 
 export function ProdutoItem({ type }: ProdutoItemProps) {
@@ -47,5 +47,5 @@ export function ProdutoItem({ type }: ProdutoItemProps) {
         </ul>
       </div>
     </PordutoItemContainer>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MissaoContainer = styled.section`
   padding-top: 60px;
@@ -11,7 +11,7 @@ export const MissaoContainer = styled.section`
   }
 
   ul li {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 30px;
   }
@@ -32,4 +32,4 @@ export const MissaoContainer = styled.section`
       line-height: 25px;
     }
   }
-`;
+`

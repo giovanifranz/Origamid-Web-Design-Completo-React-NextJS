@@ -1,5 +1,5 @@
-import { Social } from "../../../components";
-import { FooterContainer } from "./styles";
+import { Social } from '../../../components'
+import { FooterContainer } from './styles'
 export function Footer() {
   return (
     <footer>
@@ -40,5 +40,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

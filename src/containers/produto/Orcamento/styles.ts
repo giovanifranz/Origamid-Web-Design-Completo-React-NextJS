@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const OrcamentoContainer = styled.section`
   background: var(--black);
@@ -13,7 +13,7 @@ export const OrcamentoContainer = styled.section`
   h2:after {
     background: var(--yellow);
   }
-`;
+`
 
 export const OrcamentoDados = styled.div`
   color: var(--white);
@@ -30,7 +30,7 @@ export const OrcamentoDados = styled.div`
     display: block;
     font-size: 18px;
     line-height: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 
   span:nth-of-type(2) {
@@ -42,7 +42,7 @@ export const OrcamentoDados = styled.div`
   }
 
   ul li {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 14px;
     padding: 10px 15px;
   }
@@ -60,4 +60,4 @@ export const OrcamentoDados = styled.div`
       padding-right: 0px;
     }
   }
-`;
+`

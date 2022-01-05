@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ProdutosContainer = styled.section`
-    padding: 60px 0;
+  padding: 60px 0;
 
   .produtos_lista li {
     background: var(--yellow);
@@ -22,7 +22,7 @@ export const ProdutosContainer = styled.section`
   }
 
   .produtos_lista li h3:after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -38,4 +38,4 @@ export const ProdutosContainer = styled.section`
     background: var(--black);
     padding: 20px;
   }
-`;
+`

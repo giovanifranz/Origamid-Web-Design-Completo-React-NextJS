@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const PortfolioComponent = styled.section`
   width: 100%;
@@ -20,4 +20,4 @@ export const PortfolioComponent = styled.section`
   .call p {
     color: var(--white);
   }
-`;
+`

@@ -1,12 +1,12 @@
-import { OrcamentoContainer, OrcamentoDados } from "./styles";
-import { Formulario } from "../../../components";
+import { OrcamentoContainer, OrcamentoDados } from './styles'
+import { Formulario } from '../../../components'
 
 export function Orcamento() {
   return (
     <OrcamentoContainer>
       <div className="container">
         <h2 className="subtitulo">Orçamento</h2>
-        <Formulario color="white"/>
+        <Formulario color="white" />
 
         <OrcamentoDados className="grid-8">
           <h3>Dados</h3>
@@ -24,5 +24,5 @@ export function Orcamento() {
         </OrcamentoDados>
       </div>
     </OrcamentoContainer>
-  );
+  )
 }

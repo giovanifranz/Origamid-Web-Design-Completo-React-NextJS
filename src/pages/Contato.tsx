@@ -1,5 +1,5 @@
-import { IntroIntern } from "../containers/global";
-import { Contato as ContatoContainer, Mapa } from "../containers/contato";
+import { IntroIntern } from '../containers/global'
+import { Contato as ContatoContainer, Mapa } from '../containers/contato'
 
 export default function Contato() {
   return (
@@ -11,5 +11,5 @@ export default function Contato() {
       <ContatoContainer />
       <Mapa />
     </>
-  );
+  )
 }

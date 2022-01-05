@@ -1,4 +1,4 @@
-import { Blockquote } from "./Blockquote";
+import { Blockquote } from './Blockquote'
 
 export function Comentarios() {
   return (
@@ -28,5 +28,5 @@ export function Comentarios() {
         author="Bernardo"
       />
     </section>
-  );
+  )
 }

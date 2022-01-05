@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Blockquote = styled.blockquote`
   max-width: 320px;
@@ -12,7 +12,7 @@ export const Blockquote = styled.blockquote`
 
   p:before,
   p:after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -26,4 +26,4 @@ export const Blockquote = styled.blockquote`
     font-size: 14px;
     letter-spacing: 0.1em;
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const BlockquoteComponent = styled.blockquote`
   padding: 60px 0;
@@ -7,7 +7,7 @@ export const BlockquoteComponent = styled.blockquote`
 
   p {
     text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 25px;
     font-style: italic;
@@ -20,4 +20,4 @@ export const BlockquoteComponent = styled.blockquote`
     float: right;
     font-style: normal;
   }
-`;
+`

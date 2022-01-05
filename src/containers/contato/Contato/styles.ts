@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContatoContainer = styled.section`
   padding: 40px 0;
@@ -15,7 +15,7 @@ export const ContatoContainer = styled.section`
     display: block;
     font-size: 18px;
     line-height: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 
   .contato_dados span:nth-of-type(even) {
@@ -40,4 +40,4 @@ export const ContatoContainer = styled.section`
   .contato_dados ul li a:hover {
     border-color: var(--black);
   }
-`;
+`

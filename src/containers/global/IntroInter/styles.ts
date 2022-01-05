@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const IntroInternContainer = styled.section`
   background: ${(props) => props.theme.bg};
@@ -17,7 +17,7 @@ export const IntroInternContainer = styled.section`
   }
 
   h1:after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -28,4 +28,4 @@ export const IntroInternContainer = styled.section`
   @media only screen and (max-width: 787px) {
     margin-top: 0px;
   }
-`;
+`

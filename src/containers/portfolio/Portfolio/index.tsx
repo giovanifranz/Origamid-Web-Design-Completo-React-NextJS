@@ -1,5 +1,5 @@
-import { Foto } from "../../../components/Foto";
-import { PortfolioComponent } from "../../../components";
+import { Foto } from '../../../components/Foto'
+import { PortfolioComponent } from '../../../components'
 export function Portfolio() {
   return (
     <PortfolioComponent>
@@ -29,5 +29,5 @@ export function Portfolio() {
         </ul>
       </div>
     </PortfolioComponent>
-  );
+  )
 }

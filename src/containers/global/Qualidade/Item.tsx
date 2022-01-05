@@ -1,5 +1,5 @@
 interface ItemProps {
-  title: string;
+  title: string
 }
 
 export function Item({ title }: ItemProps) {
@@ -11,5 +11,5 @@ export function Item({ title }: ItemProps) {
         renovação renovação renovação
       </p>
     </li>
-  );
+  )
 }

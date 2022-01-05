@@ -1,2 +1,2 @@
-export * from './Contato';
-export * from './Mapa';
+export * from './Contato'
+export * from './Mapa'

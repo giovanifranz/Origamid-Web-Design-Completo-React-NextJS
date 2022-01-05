@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 interface ProdutoProps {
-  type: "Passeio" | "Esporte" | "Retro";
+  type: 'Passeio' | 'Esporte' | 'Retro'
 }
 
 export function Produto({ type }: ProdutoProps) {
@@ -21,5 +21,5 @@ export function Produto({ type }: ProdutoProps) {
         renovação.
       </p>
     </li>
-  );
+  )
 }

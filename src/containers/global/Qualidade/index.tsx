@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Item } from "./Item";
-import { QualidadeContainer } from "./styles";
+import Image from 'next/image'
+import Link from 'next/link'
+import { Item } from './Item'
+import { QualidadeContainer } from './styles'
 
 export function Qualidade() {
   return (
@@ -25,5 +25,5 @@ export function Qualidade() {
         </Link>
       </div>
     </QualidadeContainer>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { MissaoContainer } from "./styles";
+import Image from 'next/image'
+import { MissaoContainer } from './styles'
 
 export function Missao() {
   return (
@@ -36,5 +36,5 @@ export function Missao() {
         />
       </div>
     </MissaoContainer>
-  );
+  )
 }

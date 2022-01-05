@@ -1,5 +1,5 @@
-import { IntroIntern } from "../containers/global";
-import { Orcamento, ProdutoItem } from "../containers/produto";
+import { IntroIntern } from '../containers/global'
+import { Orcamento, ProdutoItem } from '../containers/produto'
 
 export default function Produto() {
   return (
@@ -13,5 +13,5 @@ export default function Produto() {
       <ProdutoItem type="retro" />
       <Orcamento />
     </>
-  );
+  )
 }

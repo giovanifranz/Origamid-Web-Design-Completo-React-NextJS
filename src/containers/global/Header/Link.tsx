@@ -1,7 +1,7 @@
-import NextLink from "next/link";
+import NextLink from 'next/link'
 
 interface LinkProps {
-  href: string;
+  href: string
 }
 
 export function Link({ href }: LinkProps) {
@@ -11,5 +11,5 @@ export function Link({ href }: LinkProps) {
         <a>{href}</a>
       </NextLink>
     </li>
-  );
+  )
 }

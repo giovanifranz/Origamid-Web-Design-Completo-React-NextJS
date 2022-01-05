@@ -1,5 +1,5 @@
-import { Produto } from "./Produto";
-import { ProdutosContainer } from "./styles";
+import { Produto } from './Produto'
+import { ProdutosContainer } from './styles'
 
 export function Produtos() {
   return (
@@ -18,5 +18,5 @@ export function Produtos() {
         </a>
       </div>
     </ProdutosContainer>
-  );
+  )
 }

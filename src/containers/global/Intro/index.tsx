@@ -1,5 +1,5 @@
-import { IntroContainer } from "./styles";
-import { Blockquote } from "../../../components";
+import { IntroContainer } from './styles'
+import { Blockquote } from '../../../components'
 
 export function Intro() {
   return (
@@ -20,5 +20,5 @@ export function Intro() {
         </a>
       </div>
     </IntroContainer>
-  );
+  )
 }

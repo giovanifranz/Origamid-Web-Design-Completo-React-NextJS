@@ -1,27 +1,27 @@
-import { Formik, Field } from "formik";
-import { FormularioComponent } from "./styles";
-import { ThemeProvider } from "styled-components";
+import { Formik, Field } from 'formik'
+import { FormularioComponent } from './styles'
+import { ThemeProvider } from 'styled-components'
 
 interface FormularioProps {
-  color: "white" | "black";
-  marginMobile?: "40px";
+  color: 'white' | 'black'
+  marginMobile?: '40px'
 }
 
 export function Formulario({ color, marginMobile }: FormularioProps) {
   const theme = {
     color: `var(--${color})`,
-    mb: marginMobile,
-  };
+    mb: marginMobile
+  }
   return (
     <Formik
       initialValues={{
-        nome: "",
-        email: "",
-        telefone: "",
-        mensagem: "",
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: ''
       }}
       onSubmit={async (values) => {
-        console.log(values);
+        console.log(values)
       }}
     >
       <ThemeProvider theme={theme}>
@@ -55,5 +55,5 @@ export function Formulario({ color, marginMobile }: FormularioProps) {
         </FormularioComponent>
       </ThemeProvider>
     </Formik>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -69,4 +69,4 @@ export const HeaderContainer = styled.header`
       border-color: var(--white);
     }
   }
-`;
+`

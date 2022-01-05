@@ -1,5 +1,8 @@
-import { IntroIntern } from "../containers/global";
-import { Comentarios, Portfolio as PortfolioContainer } from "../containers/portfolio";
+import { IntroIntern } from '../containers/global'
+import {
+  Comentarios,
+  Portfolio as PortfolioContainer
+} from '../containers/portfolio'
 
 export default function Portfolio() {
   return (
@@ -8,8 +11,8 @@ export default function Portfolio() {
         title="portfolio"
         description="conheça os projetos que amamos mostrar"
       />
-        <Comentarios />
-        <PortfolioContainer />
+      <Comentarios />
+      <PortfolioContainer />
     </>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { Intro, Qualidade } from "../containers/global";
-import { Produtos, Portfolio } from "../containers/home";
+import { Intro, Qualidade } from '../containers/global'
+import { Produtos, Portfolio } from '../containers/home'
 
 export default function Home() {
   return (
@@ -9,5 +9,5 @@ export default function Home() {
       <Portfolio />
       <Qualidade />
     </>
-  );
+  )
 }

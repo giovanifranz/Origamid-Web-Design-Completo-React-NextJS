@@ -1,7 +1,7 @@
-import Image from "next/image";
-import NextLink from "next/link";
-import { Link } from "./Link";
-import { HeaderContainer } from "./Styles";
+import Image from 'next/image'
+import NextLink from 'next/link'
+import { Link } from './Link'
+import { HeaderContainer } from './Styles'
 
 export function Header() {
   return (
@@ -27,5 +27,5 @@ export function Header() {
         </nav>
       </div>
     </HeaderContainer>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ export const FooterContainer = styled.div`
   }
 
   h3:after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -31,7 +31,7 @@ export const FooterContainer = styled.div`
   .footer_contato ul li {
     font-size: 14px;
     line-height: 20px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
   }
 
   .footer_redes ul li {
@@ -61,4 +61,4 @@ export const FooterContainer = styled.div`
       height: 26px;
     }
   }
-`;
+`

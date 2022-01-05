@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 interface SocialProps {
-  type: "Facebook" | "Instagram" | "Twitter";
+  type: 'Facebook' | 'Instagram' | 'Twitter'
 }
 
 export function Social({ type }: SocialProps) {
@@ -16,5 +16,5 @@ export function Social({ type }: SocialProps) {
         />
       </a>
     </li>
-  );
+  )
 }

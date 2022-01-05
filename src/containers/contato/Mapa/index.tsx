@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { MapaContainer } from "./styles";
+import Image from 'next/image'
+import { MapaContainer } from './styles'
 
 export function Mapa() {
   return (
@@ -13,5 +13,5 @@ export function Mapa() {
         />
       </a>
     </MapaContainer>
-  );
+  )
 }

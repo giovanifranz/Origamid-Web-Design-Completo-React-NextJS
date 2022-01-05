@@ -1,5 +1,5 @@
-import { Foto } from "../../components/Foto";
-import { PortfolioComponent } from "../../components";
+import { Foto } from '../../components/Foto'
+import { PortfolioComponent } from '../../components'
 
 export function Portfolio() {
   return (
@@ -25,5 +25,5 @@ export function Portfolio() {
         </div>
       </div>
     </PortfolioComponent>
-  );
+  )
 }

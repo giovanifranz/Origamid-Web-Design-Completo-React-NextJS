@@ -1,7 +1,7 @@
-import type { AppProps } from "next/app";
-import Head from "next/head";
-import { Header, Footer, Quebra } from "../containers/global";
-import { GlobalStyle } from "../styles/global";
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { Header, Footer, Quebra } from '../containers/global'
+import { GlobalStyle } from '../styles/global'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Quebra />
       <Footer />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

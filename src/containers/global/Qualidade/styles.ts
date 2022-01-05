@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const QualidadeContainer = styled.section`
   padding: 60px 0;
 
   &:after {
-    content: "";
+    content: '';
     width: 634px;
     height: 83px;
     display: block;
-    background: url("../img/linhas.svg") no-repeat center;
+    background: url('../img/linhas.svg') no-repeat center;
     position: absolute;
     top: 209px;
     right: 162px;
@@ -39,7 +39,7 @@ export const QualidadeContainer = styled.section`
   }
 
   .qualidade_lista li h3:after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -61,4 +61,4 @@ export const QualidadeContainer = styled.section`
       display: none;
     }
   }
-`;
+`

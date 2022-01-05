@@ -1,5 +1,5 @@
-import { IntroIntern, Qualidade } from "../containers/global";
-import { Missao } from "../containers/sobre";
+import { IntroIntern, Qualidade } from '../containers/global'
+import { Missao } from '../containers/sobre'
 
 export default function Sobre() {
   return (
@@ -8,5 +8,5 @@ export default function Sobre() {
       <Missao />
       <Qualidade />
     </>
-  );
+  )
 }

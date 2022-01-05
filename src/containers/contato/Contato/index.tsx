@@ -1,5 +1,5 @@
-import { Formulario, Social } from "../../../components";
-import { ContatoContainer } from "./styles";
+import { Formulario, Social } from '../../../components'
+import { ContatoContainer } from './styles'
 
 export function Contato() {
   return (
@@ -19,5 +19,5 @@ export function Contato() {
         </ul>
       </div>
     </ContatoContainer>
-  );
+  )
 }
