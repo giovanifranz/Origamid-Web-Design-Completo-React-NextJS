@@ -1,4 +1,5 @@
 import { Produto } from './Produto'
+import Link from 'next/link'
 import { ProdutosContainer } from './styles'
 
 export function Produtos() {
@@ -13,9 +14,9 @@ export function Produtos() {
 
       <div className="call">
         <p>clique aqui e veja os detalhes dos produtos</p>
-        <a href="produtos.html" className="btn btn-preto">
-          Produtos
-        </a>
+        <Link href="/Produtos">
+          <a className="btn btn-preto">Produtos</a>
+        </Link>
       </div>
     </ProdutosContainer>
   )
