@@ -1,16 +1,17 @@
 import { Formik, Field } from 'formik'
 import { FormularioComponent } from './styles'
 import { ThemeProvider } from 'styled-components'
+import axios from 'axios'
 
 interface FormularioProps {
   color: 'white' | 'black'
-  marginMobile?: '40px'
+  marginMobile?: true
 }
 
 export function Formulario({ color, marginMobile }: FormularioProps) {
   const theme = {
     color: `var(--${color})`,
-    mb: marginMobile
+    mb: marginMobile === true ?? '40px'
   }
   return (
     <Formik
@@ -22,6 +23,13 @@ export function Formulario({ color, marginMobile }: FormularioProps) {
       }}
       onSubmit={async (values) => {
         console.log(values)
+        const data = { ...values }
+        axios({
+          method: 'post',
+          url: '/api/send-email',
+          headers: { 'Content-Type': 'application/json' },
+          data: JSON.stringify({ data })
+        })
       }}
     >
       <ThemeProvider theme={theme}>
@@ -48,7 +56,7 @@ export function Formulario({ color, marginMobile }: FormularioProps) {
           />
 
           <label htmlFor="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" required></textarea>
+          <Field as="textarea" id="mensagem" name="mensagem" required></Field>
           <button id="enviar" name="enviar" type="submit" className="btn">
             Enviar
           </button>

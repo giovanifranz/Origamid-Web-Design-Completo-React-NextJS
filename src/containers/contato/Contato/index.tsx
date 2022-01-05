@@ -4,7 +4,7 @@ import { ContatoContainer } from './styles'
 export function Contato() {
   return (
     <ContatoContainer className="container fadeInDown" data-anime="1200">
-      <Formulario color="black" marginMobile="40px" />
+      <Formulario color="black" marginMobile={true} />
       <div className="contato_dados grid-8">
         <h3>Dados</h3>
         <span>+55 21 93223 3232</span>
