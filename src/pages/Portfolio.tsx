@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { IntroIntern } from '../containers/global'
 import {
   Comentarios,
@@ -7,6 +8,9 @@ import {
 export default function Portfolio() {
   return (
     <>
+      <Head>
+        <title>Bikcraft - Conheça o portfólio de clientes</title>
+      </Head>
       <IntroIntern
         title="portfolio"
         description="conheça os projetos que amamos mostrar"

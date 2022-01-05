@@ -17,7 +17,9 @@ export async function sendEmail(data: data) {
       html: `Telefone: ${data.telefone} <br> E-mail: ${data.email} <br> Mensagem: ${data.mensagem}`
     }
     await sgMail.send(msg).then(
-      () => {console.log('Email enviado com sucesso!')},
+      () => {
+        console.log('Email enviado com sucesso!')
+      },
       (error) => {
         console.error(error)
         if (error.response) {
