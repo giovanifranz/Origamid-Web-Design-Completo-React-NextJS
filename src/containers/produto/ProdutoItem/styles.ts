@@ -25,20 +25,24 @@ export const PordutoItemContainer = styled.section`
     margin: 6px auto 8px auto;
   }
 
-  .produto_icone {
-    background: var(--black);
-    padding: 70px 0;
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+    h2 {
+      top: -150px;
+      margin-bottom: -56px;
+    }
   }
-
-  .produto_icone img {
-    margin: 0 auto;
+  @media only screen and (max-width: 787px) {
+    h2 {
+      top: -100px;
+      margin-bottom: -68px;
+    }
   }
+`
 
-  .produto_info {
-    background: var(--black);
-  }
+export const ProdutoInfo = styled.div`
+  background: var(--black);
 
-  .produto_info p {
+  p {
     color: var(--white);
     font-size: 18px;
     line-height: 25px;
@@ -46,7 +50,7 @@ export const PordutoItemContainer = styled.section`
     padding: 30px 40px;
   }
 
-  .produto_info ul li {
+  ul li {
     background: var(--yellow);
     text-transform: uppercase;
     font-size: 18px;
@@ -59,60 +63,58 @@ export const PordutoItemContainer = styled.section`
     padding-top: 16px;
   }
 
-  .produto_info ul li:nth-child(1),
-  .produto_info ul li:nth-child(2) {
+  ul li:nth-child(1),
+  ul li:nth-child(2) {
     margin-bottom: 2px;
   }
 
-  .produto_info ul li:nth-child(even) {
+  ul li:nth-child(even) {
     margin-left: 2px;
   }
 
   @media only screen and (min-width: 788px) and (max-width: 979px) {
-    h2 {
-      top: -150px;
-      margin-bottom: -56px;
-    }
-
-    .produto_icone {
-      padding: 41px 0;
-    }
-
-    .produto_info p {
+    p {
       font-size: 14px;
       line-height: 20px;
       height: 122px;
       padding: 20px 30px;
     }
 
-    .produto_info ul li {
+    ul li {
       width: 181px;
       height: 49px;
     }
   }
+
   @media only screen and (max-width: 787px) {
-    h2 {
-      top: -100px;
-      margin-bottom: -68px;
-    }
-
-    .produto_icone {
-      padding: 41px 0;
-    }
-
-    .produto_info p {
+    p {
       font-size: 14px;
       line-height: 20px;
       height: auto;
       padding: 20px 30px;
     }
 
-    .produto_info ul li {
+    ul li {
       width: 149px;
       height: 49px;
       font-size: 14px;
       line-height: 20px;
       padding-top: 14px;
     }
+  }
+`
+export const ProdutoIcone = styled.div`
+  background: var(--black);
+  padding: 70px 0;
+
+  img {
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+    padding: 41px 0;
+  }
+  @media only screen and (max-width: 787px) {
+    padding: 41px 0;
   }
 `

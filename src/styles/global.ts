@@ -65,45 +65,6 @@ img {
 	border-color: var(--black);
 }
 
-.subtitulo {
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: bold;
-	letter-spacing: .1em;
-	color: var(--black);
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-.subtitulo:after {
-	content: "";
-	display: block;
-	width: 60px;
-	height: 3px;
-	background: var(--black);
-	margin: 8px auto;
-}
-
-.subtitulo-interno {
-	font-size: 24px;
-	line-height: 30px;
-	font-weight: bold;
-	letter-spacing: .1em;
-	color: var(--black);
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-
-.subtitulo-interno:after {
-	content: "";
-	display: block;
-	width: 60px;
-	height: 3px;
-	background: var(--black);
-	margin: 8px 0;
-}
-
 .call {
 	padding-top: 40px;
 	text-align: center;

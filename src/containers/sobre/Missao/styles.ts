@@ -16,10 +16,6 @@ export const MissaoContainer = styled.section`
     line-height: 30px;
   }
 
-  .foto-equipe {
-    padding-top: 20px;
-  }
-
   @media only screen and (max-width: 787px) {
     p {
       font-size: 14px;
@@ -32,4 +28,8 @@ export const MissaoContainer = styled.section`
       line-height: 25px;
     }
   }
+`
+
+export const FotoEquipe = styled.div`
+  padding-top: 20px;
 `

@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import { MissaoContainer } from './styles'
+import { SubtituloInterno } from '../../../components'
+import { MissaoContainer, FotoEquipe } from './styles'
 
 export function Missao() {
   return (
     <MissaoContainer className="container fadeInDown" data-anime="1200">
       <div className="grid-10">
-        <h2 className="subtitulo-interno">História, Missão e Visão</h2>
+        <SubtituloInterno>História, Missão e Visão</SubtituloInterno>
         <p>
           No mundo atual, a contínua expansão de nossa atividade cumpre um papel
           essencial na formulação da gestão inovadora da qual fazemos parte da
@@ -18,7 +19,7 @@ export function Missao() {
         </p>
       </div>
       <div className="grid-6">
-        <h2 className="subtitulo-interno">Valores</h2>
+        <SubtituloInterno>Valores</SubtituloInterno>
         <ul>
           <li>- Qualidade no processo com</li>
           <li>- Foco no cliente sem perder a</li>
@@ -27,14 +28,14 @@ export function Missao() {
         </ul>
       </div>
 
-      <div className="grid-16 foto-equipe">
+      <FotoEquipe className="grid-16">
         <Image
           src="/img/equipe-bikcraft.jpg"
           alt="Equipe Bikcraft"
           width={940}
           height={320}
         />
-      </div>
+      </FotoEquipe>
     </MissaoContainer>
   )
 }

@@ -1,11 +1,12 @@
 import { Produto } from './Produto'
 import Link from 'next/link'
+import { Subtitulo } from '../../../components'
 import { ProdutosContainer, ProdutosLista } from './styles'
 
 export function Produtos() {
   return (
     <ProdutosContainer className="container fadeInDown" data-anime="1600">
-      <h2 className="subtitulo">Produtos</h2>
+      <Subtitulo>Produtos</Subtitulo>
       <ProdutosLista>
         <Produto type="Passeio" />
         <Produto type="Esporte" />

@@ -1,11 +1,11 @@
 import { OrcamentoContainer, OrcamentoDados } from './styles'
-import { Formulario } from '../../../components'
+import { Formulario, Subtitulo } from '../../../components'
 
 export function Orcamento() {
   return (
     <OrcamentoContainer>
       <div className="container">
-        <h2 className="subtitulo">Orçamento</h2>
+        <Subtitulo>Orçamento</Subtitulo>
         <Formulario page="produto" />
 
         <OrcamentoDados className="grid-8">

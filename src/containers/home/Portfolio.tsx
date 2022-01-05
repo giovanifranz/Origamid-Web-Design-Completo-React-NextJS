@@ -1,12 +1,11 @@
-import { Foto } from '../../components/Foto'
 import Link from 'next/link'
-import { PortfolioComponent } from '../../components'
+import { Foto, PortfolioComponent, Subtitulo } from '../../components'
 
 export function Portfolio() {
   return (
     <PortfolioComponent>
       <div className="container">
-        <h2 className="subtitulo">Portfólio</h2>
+        <Subtitulo>Portfólio</Subtitulo>
         <ul className="portfolio_lista">
           <li className="grid-8">
             <Foto type="Retro" width={460} />
