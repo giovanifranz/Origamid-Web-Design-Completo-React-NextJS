@@ -114,12 +114,6 @@ img {
 	margin-bottom: 20px;
 }
 
-.copy {
-	width: 100%;
-	background: var(--yellow);
-	padding: 20px 0;
-}
-
 .nao-aparece {
 	visibility: hidden;
 	position: absolute;

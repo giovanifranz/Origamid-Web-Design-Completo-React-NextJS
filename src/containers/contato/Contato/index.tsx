@@ -1,11 +1,11 @@
 import { Formulario, Social } from '../../../components'
-import { ContatoContainer } from './styles'
+import { ContatoContainer, ContratoDados } from './styles'
 
 export function Contato() {
   return (
     <ContatoContainer className="container fadeInDown" data-anime="1200">
       <Formulario page="contato" />
-      <div className="contato_dados grid-8">
+      <ContratoDados className="grid-8">
         <h3>Dados</h3>
         <span>+55 21 93223 3232</span>
         <span>orcamento@bikcraft.com</span>
@@ -17,7 +17,7 @@ export function Contato() {
           <Social type="Instagram" />
           <Social type="Twitter" />
         </ul>
-      </div>
+      </ContratoDados>
     </ContatoContainer>
   )
 }

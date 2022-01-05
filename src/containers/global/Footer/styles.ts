@@ -23,42 +23,50 @@ export const FooterContainer = styled.div`
     background: var(--yellow);
     margin: 6px 0 12px 0;
   }
-
-  .footer_historia {
-    padding-right: 40px;
-  }
-
-  .footer_contato ul li {
+`
+export const FooterContato = styled.div`
+  ul li {
     font-size: 14px;
     line-height: 20px;
     font-family: Georgia, 'Times New Roman', serif;
   }
-
-  .footer_redes ul li {
+`
+export const FooterRedes = styled.div`
+  ul li {
     display: inline-block;
     margin-right: 10px;
   }
 
-  .footer_redes ul li a {
+  ul li a {
     border: 3px solid var(--yellow);
     display: block;
     padding: 10px;
   }
 
-  .footer_redes ul li a:hover {
+  ul li a:hover {
     border-color: var(--white);
   }
 
   @media only screen and (min-width: 788px) and (max-width: 979px) {
-    .footer_redes ul li a {
+    ul li a {
       border: 3px solid var(--yellow);
       display: block;
       padding: 6px;
     }
 
-    .footer_redes ul li a img {
+    ul li a img {
       width: 26px;
       height: 26px;
     }
   }
+`
+
+export const FooterHistoria = styled.div`
+  padding-right: 40px;
+`
+
+export const Copy = styled.div`
+  width: 100%;
+  background: var(--yellow);
+  padding: 20px 0;
 `
