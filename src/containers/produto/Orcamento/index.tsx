@@ -6,7 +6,7 @@ export function Orcamento() {
     <OrcamentoContainer>
       <div className="container">
         <h2 className="subtitulo">Orçamento</h2>
-        <Formulario color="white" />
+        <Formulario page="produto" />
 
         <OrcamentoDados className="grid-8">
           <h3>Dados</h3>

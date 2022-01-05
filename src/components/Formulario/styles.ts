@@ -47,6 +47,6 @@ export const FormularioComponent = styled(Form)`
 
   @media only screen and (max-width: 787px) {
     padding-right: 0px;
-    margin-bottom: ${(props) => props.theme.mb};
+    margin-bottom: ${(props) => props.theme.mobile};
   }
 `
