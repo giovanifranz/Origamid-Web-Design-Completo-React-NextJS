@@ -22,9 +22,8 @@ export function Formulario({ color, marginMobile }: FormularioProps) {
         mensagem: ''
       }}
       onSubmit={async (values) => {
-        console.log(values)
         const data = { ...values }
-        axios({
+        await axios({
           method: 'post',
           url: '/api/send-email',
           headers: { 'Content-Type': 'application/json' },
