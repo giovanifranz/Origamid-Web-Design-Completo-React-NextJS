@@ -1,4 +1,5 @@
 import { Foto } from '../../components/Foto'
+import Link from 'next/link'
 import { PortfolioComponent } from '../../components'
 
 export function Portfolio() {
@@ -19,9 +20,9 @@ export function Portfolio() {
         </ul>
         <div className="call">
           <p>conheça mais o nosso portfólio</p>
-          <a href="portfolio.html" className="btn">
-            Portfólio
-          </a>
+          <Link href="/Portfolio">
+            <a className="btn">Portfólio</a>
+          </Link>
         </div>
       </div>
     </PortfolioComponent>
