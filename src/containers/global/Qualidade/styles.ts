@@ -8,28 +8,39 @@ export const QualidadeContainer = styled.section`
     width: 634px;
     height: 83px;
     display: block;
-    background: url('../img/linhas.svg') no-repeat center;
+    background: url('/img/linhas.svg') no-repeat center;
     position: absolute;
     top: 209px;
     right: 162px;
     z-index: -1;
   }
 
-  img {
-    margin: 0 auto;
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
+    &:after {
+      right: 66px;
+    }
   }
-
-  .qualidade_lista {
-    padding-top: 20px;
-    overflow: auto;
+  @media only screen and (max-width: 787px) {
+    &:after {
+      display: none;
+    }
   }
+`
 
-  .qualidade_lista li {
+export const BikecraftImg = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const QualidadeLista = styled.ul`
+  li {
+    margin-top: 20px;
     text-align: center;
     padding: 0 40px;
   }
 
-  .qualidade_lista li h3 {
+  li h3 {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
@@ -38,7 +49,7 @@ export const QualidadeContainer = styled.section`
     margin-top: 20px;
   }
 
-  .qualidade_lista li h3:after {
+  li h3:after {
     content: '';
     display: block;
     width: 60px;
@@ -48,17 +59,8 @@ export const QualidadeContainer = styled.section`
   }
 
   @media only screen and (min-width: 788px) and (max-width: 979px) {
-    &:after {
-      right: 66px;
-    }
-
-    .qualidade_lista li {
+    li {
       padding: 0 10px;
-    }
-  }
-  @media only screen and (max-width: 787px) {
-    &:after {
-      display: none;
     }
   }
 `
