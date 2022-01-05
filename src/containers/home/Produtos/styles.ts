@@ -5,7 +5,6 @@ export const ProdutosContainer = styled.section`
 `
 export const ProdutosIcone = styled.div`
   background: var(--black);
-  padding-top: 20px;
 `
 
 export const ProdutosLista = styled.ul`
