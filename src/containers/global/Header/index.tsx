@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { Link } from './Link'
-import { HeaderContainer } from './Styles'
+import { HeaderContainer, HeaderMenu } from './Styles'
 
 export function Header() {
   return (
@@ -17,14 +17,14 @@ export function Header() {
             />
           </a>
         </NextLink>
-        <nav className="grid-12 header_menu">
+        <HeaderMenu className="grid-12">
           <ul>
             <Link href="Sobre" />
             <Link href="Produtos" />
             <Link href="Portfolio" />
             <Link href="Contato" />
           </ul>
-        </nav>
+        </HeaderMenu>
       </div>
     </HeaderContainer>
   )
