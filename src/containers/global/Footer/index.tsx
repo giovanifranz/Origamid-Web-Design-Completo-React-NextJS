@@ -1,4 +1,4 @@
-import { Social } from '../../../components'
+import { Social, Container } from '../../../components'
 import {
   FooterContainer,
   FooterContato,
@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer>
       <FooterContainer>
-        <div className="container">
+        <Container as="div">
           <FooterHistoria className="grid-8">
             <h3>Nossa História</h3>
             <p>
@@ -37,13 +37,13 @@ export function Footer() {
               <Social type="Twitter" />
             </ul>
           </FooterRedes>
-        </div>
+        </Container>
       </FooterContainer>
 
       <Copy>
-        <div className="container">
+        <Container as="div">
           <p className="grid-16">Bikcraft 2019 - Alguns direitos reservados.</p>
-        </div>
+        </Container>
       </Copy>
     </footer>
   )

@@ -1,9 +1,9 @@
 import { Foto } from '../../../components/Foto'
-import { PortfolioComponent } from '../../../components'
+import { PortfolioComponent, Container } from '../../../components'
 export function Portfolio() {
   return (
     <PortfolioComponent>
-      <div className="container" data-slide="portfolio">
+      <Container as="div" data-slide="portfolio">
         <ul className="portfolio_lista">
           <li className="grid-8">
             <Foto type="Retro" width={460} />
@@ -27,7 +27,7 @@ export function Portfolio() {
             <Foto type="Esporte" width={940} />
           </li>
         </ul>
-      </div>
+      </Container>
     </PortfolioComponent>
   )
 }

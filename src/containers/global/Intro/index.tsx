@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import { IntroContainer } from './styles'
-import { Blockquote } from '../../../components'
+import { Blockquote, Container } from '../../../components'
 
 export function Intro() {
   return (
     <IntroContainer>
-      <div className="container">
+      <Container as="div">
         <h1 data-anime="400" className="fadeInDown">
           Bicicletas Feitas a Mão
         </h1>
@@ -21,7 +21,7 @@ export function Intro() {
             Orçamento
           </a>
         </Link>
-      </div>
+      </Container>
     </IntroContainer>
   )
 }

@@ -6,7 +6,7 @@ import { QualidadeContainer, BikecraftImg, QualidadeLista } from './styles'
 
 export function Qualidade() {
   return (
-    <QualidadeContainer className="container">
+    <QualidadeContainer>
       <Subtitulo>Qualidade</Subtitulo>
       <BikecraftImg>
         <Image

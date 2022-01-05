@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Container } from '../../../components'
 
-export const ContatoContainer = styled.section`
+export const ContatoContainer = styled(Container)`
   padding: 40px 0;
 `
 export const ContratoDados = styled.div`

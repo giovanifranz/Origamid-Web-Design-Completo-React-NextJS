@@ -4,7 +4,7 @@ import { MissaoContainer, FotoEquipe } from './styles'
 
 export function Missao() {
   return (
-    <MissaoContainer className="container fadeInDown" data-anime="1200">
+    <MissaoContainer className="fadeInDown" data-anime="1200">
       <div className="grid-10">
         <SubtituloInterno>História, Missão e Visão</SubtituloInterno>
         <p>

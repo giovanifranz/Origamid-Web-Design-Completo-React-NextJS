@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import { Container } from '../../../components'
 
-export const ProdutosContainer = styled.section`
+export const ProdutosContainer = styled(Container).attrs(() => ({
+  as: 'section'
+}))`
   padding: 60px 0;
 `
 export const ProdutosIcone = styled.div`

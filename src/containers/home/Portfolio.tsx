@@ -1,10 +1,15 @@
 import Link from 'next/link'
-import { Foto, PortfolioComponent, Subtitulo } from '../../components'
+import {
+  Foto,
+  PortfolioComponent,
+  Subtitulo,
+  Container
+} from '../../components'
 
 export function Portfolio() {
   return (
     <PortfolioComponent>
-      <div className="container">
+      <Container as="div">
         <Subtitulo>Portfólio</Subtitulo>
         <ul className="portfolio_lista">
           <li className="grid-8">
@@ -23,7 +28,7 @@ export function Portfolio() {
             <a className="btn">Portfólio</a>
           </Link>
         </div>
-      </div>
+      </Container>
     </PortfolioComponent>
   )
 }

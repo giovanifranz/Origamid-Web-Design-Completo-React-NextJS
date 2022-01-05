@@ -1,9 +1,10 @@
 import { Blockquote } from './Blockquote'
-
+import { Container } from '../../../components'
 export function Comentarios() {
   return (
-    <section
-      className="container fadeInDown"
+    <Container
+      as="section"
+      className="fadeInDown"
       data-slide="quote"
       data-anime="1200"
     >
@@ -27,6 +28,6 @@ export function Comentarios() {
         vida nada igual."
         author="Bernardo"
       />
-    </section>
+    </Container>
   )
 }

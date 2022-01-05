@@ -7,7 +7,7 @@ interface ProdutoItemProps {
 
 export function ProdutoItem({ type }: ProdutoItemProps) {
   return (
-    <PordutoItemContainer className="container">
+    <PordutoItemContainer>
       <div className="grid-11">
         <Image
           src={`/img/produtos/bikcraft-${type}-1.jpg`}

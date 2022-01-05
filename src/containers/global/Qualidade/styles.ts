@@ -1,6 +1,8 @@
 import styled from 'styled-components'
-
-export const QualidadeContainer = styled.section`
+import { Container } from '../../../components'
+export const QualidadeContainer = styled(Container).attrs(() => ({
+  as: 'section'
+}))`
   padding: 60px 0;
 
   &:after {

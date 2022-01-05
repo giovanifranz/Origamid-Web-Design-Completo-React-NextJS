@@ -3,7 +3,7 @@ import { MapaContainer } from './styles'
 
 export function Mapa() {
   return (
-    <MapaContainer className="container">
+    <MapaContainer>
       <a href="http://google.com" className="grid-16">
         <Image
           src="/img/endereco-bikcraft.jpg"

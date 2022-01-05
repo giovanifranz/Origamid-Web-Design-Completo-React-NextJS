@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { Link } from './Link'
+import { Container } from '../../../components'
 import { HeaderContainer, HeaderMenu } from './Styles'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <div className="container">
+      <Container as="div">
         <NextLink href="/">
           <a className="grid-4">
             <Image
@@ -25,7 +26,7 @@ export function Header() {
             <Link href="Contato" />
           </ul>
         </HeaderMenu>
-      </div>
+      </Container>
     </HeaderContainer>
   )
 }

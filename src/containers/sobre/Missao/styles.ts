@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import { Container } from '../../../components'
 
-export const MissaoContainer = styled.section`
+export const MissaoContainer = styled(Container).attrs(() => ({
+  as: 'section'
+}))`
   padding-top: 60px;
 
   p {

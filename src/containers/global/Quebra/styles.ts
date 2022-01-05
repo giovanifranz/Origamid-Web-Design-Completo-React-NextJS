@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+import { Container } from '../../../components'
 
-export const QuebraComponent = styled.section`
+export const QuebraComponent = styled(Container).attrs(() => ({
+  as: 'section'
+}))`
   width: 100%;
   height: 220px;
   background: url('/img/bg-footer.jpg') no-repeat center;

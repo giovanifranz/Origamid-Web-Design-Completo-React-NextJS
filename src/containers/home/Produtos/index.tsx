@@ -5,7 +5,7 @@ import { ProdutosContainer, ProdutosLista } from './styles'
 
 export function Produtos() {
   return (
-    <ProdutosContainer className="container fadeInDown" data-anime="1600">
+    <ProdutosContainer className="fadeInDown" data-anime="1600">
       <Subtitulo>Produtos</Subtitulo>
       <ProdutosLista>
         <Produto type="Passeio" />
