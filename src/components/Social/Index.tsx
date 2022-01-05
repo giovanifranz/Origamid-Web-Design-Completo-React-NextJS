@@ -1,12 +1,12 @@
 import Image from 'next/image'
-
+import { ListItem } from './styles'
 interface SocialProps {
   type: 'Facebook' | 'Instagram' | 'Twitter'
 }
 
 export function Social({ type }: SocialProps) {
   return (
-    <li>
+    <ListItem>
       <a href={`https://${type.toLowerCase()}.com/`}>
         <Image
           src={`/img/redes-sociais/${type.toLowerCase()}.svg`}
@@ -15,6 +15,6 @@ export function Social({ type }: SocialProps) {
           alt={`${type} Bikcraft`}
         />
       </a>
-    </li>
+    </ListItem>
   )
 }

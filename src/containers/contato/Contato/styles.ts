@@ -27,17 +27,6 @@ export const ContratoDados = styled.div`
     margin-top: 10px;
   }
 
-  ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  ul li a {
-    border: 3px solid var(--yellow);
-    display: block;
-    padding: 10px;
-  }
-
   ul li a:hover {
     border-color: var(--black);
   }

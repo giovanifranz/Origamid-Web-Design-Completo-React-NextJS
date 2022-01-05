@@ -1,5 +1,5 @@
 export * from './Blockquote'
-export * from './Social'
+export * from './Social/Index'
 export * from './Formulario'
 export * from './Portfolio'
 export * from './Subtitulo'

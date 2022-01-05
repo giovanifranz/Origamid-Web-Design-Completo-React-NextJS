@@ -32,17 +32,6 @@ export const FooterContato = styled.div`
   }
 `
 export const FooterRedes = styled.div`
-  ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  ul li a {
-    border: 3px solid var(--yellow);
-    display: block;
-    padding: 10px;
-  }
-
   ul li a:hover {
     border-color: var(--white);
   }
