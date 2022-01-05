@@ -35,7 +35,6 @@ export const BikecraftImg = styled.div`
 
 export const QualidadeLista = styled.ul`
   li {
-    margin-top: 20px;
     text-align: center;
     padding: 0 40px;
   }
@@ -46,7 +45,7 @@ export const QualidadeLista = styled.ul`
     line-height: 25px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   li h3:after {
