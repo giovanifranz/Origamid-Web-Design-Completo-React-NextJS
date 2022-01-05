@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { IntroContainer } from './styles'
 import { Blockquote } from '../../../components'
 
@@ -15,9 +16,11 @@ export function Intro() {
           </p>
           <cite>WILLIAM MORRIS</cite>
         </Blockquote>
-        <a data-anime="1200" href="produtos.html" className="btn">
-          Orçamento
-        </a>
+        <Link href="/Produtos">
+          <a data-anime="1200" className="btn">
+            Orçamento
+          </a>
+        </Link>
       </div>
     </IntroContainer>
   )

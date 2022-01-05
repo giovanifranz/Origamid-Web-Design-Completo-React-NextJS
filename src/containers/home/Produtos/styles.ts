@@ -2,17 +2,23 @@ import styled from 'styled-components'
 
 export const ProdutosContainer = styled.section`
   padding: 60px 0;
+`
+export const ProdutosIcone = styled.div`
+  background: var(--black);
+  padding: 20px;
+`
 
-  .produtos_lista li {
+export const ProdutosLista = styled.ul`
+  li {
     background: var(--yellow);
     text-align: center;
   }
 
-  .produtos_lista li img {
+  li img {
     margin: 0 auto;
   }
 
-  .produtos_lista li h3 {
+  li h3 {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
@@ -21,7 +27,7 @@ export const ProdutosContainer = styled.section`
     margin-top: 20px;
   }
 
-  .produtos_lista li h3:after {
+  li h3:after {
     content: '';
     display: block;
     width: 60px;
@@ -30,12 +36,7 @@ export const ProdutosContainer = styled.section`
     margin: 2px auto;
   }
 
-  .produtos_lista li p {
+  li p {
     padding: 10px 20px 20px 20px;
-  }
-
-  .produtos_icone {
-    background: var(--black);
-    padding: 20px;
   }
 `
