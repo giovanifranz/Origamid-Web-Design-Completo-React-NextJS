@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Item } from './Item'
-import { Subtitulo, Button } from '../../../components'
+import { Subtitulo, Link } from '../../../components'
 import { QualidadeContainer, BikecraftImg, QualidadeLista } from './styles'
 
 export function Qualidade() {
@@ -22,9 +22,9 @@ export function Qualidade() {
       </QualidadeLista>
       <div className="call">
         <p>conheça mais a nossa história</p>
-        <Button href="/Sobre" hover="black">
+        <Link href="/Sobre" hover="black">
           Sobre
-        </Button>
+        </Link>
       </div>
     </QualidadeContainer>
   )

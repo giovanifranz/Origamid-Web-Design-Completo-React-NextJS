@@ -3,7 +3,7 @@ import {
   PortfolioComponent,
   Subtitulo,
   Container,
-  Button
+  Link
 } from '../../components'
 
 export function Portfolio() {
@@ -24,9 +24,9 @@ export function Portfolio() {
         </ul>
         <div className="call">
           <p>conheça mais o nosso portfólio</p>
-          <Button href="/Portfolio" hover="white">
+          <Link href="/Portfolio" hover="white">
             Portfólio
-          </Button>
+          </Link>
         </div>
       </Container>
     </PortfolioComponent>

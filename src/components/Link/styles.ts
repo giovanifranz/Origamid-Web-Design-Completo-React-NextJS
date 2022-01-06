@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledButton = styled.button`
+export const StyledAnchor = styled.a`
   background: transparent;
   border: 3px solid var(--yellow);
   padding: 10px 30px;
