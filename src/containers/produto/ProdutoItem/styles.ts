@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import { Container } from '../../../components'
 
-export const PordutoItemContainer = styled(Container).attrs(() => ({
-  as: 'section'
-}))`
+export const PordutoItemContainer = styled(Container)`
   padding-top: 60px;
 
   h2 {

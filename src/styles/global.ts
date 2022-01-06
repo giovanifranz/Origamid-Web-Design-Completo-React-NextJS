@@ -44,27 +44,6 @@ img {
 	max-width: 100%;
 }
 
-.btn {
-	border: 3px solid var(--yellow);
-	padding: 10px 30px;
-	color: var(--yellow);
-	font-size: 14px;
-	line-height: 20px;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: .1em;
-}
-
-.btn:hover {
-	color: var(--white);
-	border-color: var(--white);
-}
-
-.btn.btn-preto:hover {
-	color: var(--black);
-	border-color: var(--black);
-}
-
 .call {
 	padding-top: 40px;
 	text-align: center;

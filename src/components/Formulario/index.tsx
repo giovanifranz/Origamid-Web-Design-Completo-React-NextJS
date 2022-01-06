@@ -1,34 +1,15 @@
-import { Formik, Field } from 'formik'
-import { FormularioComponent } from './styles'
-import { ThemeProvider } from 'styled-components'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { Formik, Field } from 'formik'
+import { FormularioComponent, Button } from './styles'
+import { ThemeProvider } from 'styled-components'
+import { useWhiteBlack } from '../../hooks/useWhiteBlack'
 
 interface FormularioProps {
   page: 'produto' | 'contato'
 }
 
 export function Formulario({ page }: FormularioProps) {
-  const [btnClass, setBtnClass] = useState('btn btn-preto')
-  const [theme, setTheme] = useState({
-    color: 'var(--black)',
-    mobile: '40px'
-  })
-  useEffect(() => {
-    if (page === 'contato') {
-      setBtnClass('btn btn-preto')
-      setTheme({
-        color: 'var(--black)',
-        mobile: '40px'
-      })
-    } else {
-      setBtnClass('btn')
-      setTheme({
-        color: 'var(--white)',
-        mobile: '0'
-      })
-    }
-  }, [page])
+  const theme = useWhiteBlack(page === 'contato' ? 'black' : 'white')
 
   return (
     <Formik
@@ -73,9 +54,9 @@ export function Formulario({ page }: FormularioProps) {
 
           <label htmlFor="mensagem">Mensagem</label>
           <Field as="textarea" id="mensagem" name="mensagem" required></Field>
-          <button id="enviar" name="enviar" type="submit" className={btnClass}>
+          <Button id="enviar" name="enviar" type="submit">
             Enviar
-          </button>
+          </Button>
         </FormularioComponent>
       </ThemeProvider>
     </Formik>

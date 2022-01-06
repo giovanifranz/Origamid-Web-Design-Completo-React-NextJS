@@ -1,11 +1,10 @@
 import { Produto } from './Produto'
-import Link from 'next/link'
-import { Subtitulo } from '../../../components'
+import { Subtitulo, Button } from '../../../components'
 import { ProdutosContainer, ProdutosLista } from './styles'
 
 export function Produtos() {
   return (
-    <ProdutosContainer className="fadeInDown" data-anime="1600">
+    <ProdutosContainer as="section" className="fadeInDown" data-anime="1600">
       <Subtitulo>Produtos</Subtitulo>
       <ProdutosLista>
         <Produto type="Passeio" />
@@ -15,9 +14,9 @@ export function Produtos() {
 
       <div className="call">
         <p>clique aqui e veja os detalhes dos produtos</p>
-        <Link href="/Produtos">
-          <a className="btn btn-preto">Produtos</a>
-        </Link>
+        <Button href="/Produtos" hover="black">
+          Produtos
+        </Button>
       </div>
     </ProdutosContainer>
   )

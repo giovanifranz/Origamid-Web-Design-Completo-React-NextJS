@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import {
   Foto,
   PortfolioComponent,
   Subtitulo,
-  Container
+  Container,
+  Button
 } from '../../components'
 
 export function Portfolio() {
@@ -24,9 +24,9 @@ export function Portfolio() {
         </ul>
         <div className="call">
           <p>conheça mais o nosso portfólio</p>
-          <Link href="/Portfolio">
-            <a className="btn">Portfólio</a>
-          </Link>
+          <Button href="/Portfolio" hover="white">
+            Portfólio
+          </Button>
         </div>
       </Container>
     </PortfolioComponent>

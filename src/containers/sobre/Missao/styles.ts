@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import { Container } from '../../../components'
 
-export const MissaoContainer = styled(Container).attrs(() => ({
-  as: 'section'
-}))`
+export const MissaoContainer = styled(Container)`
   padding-top: 60px;
 
   p {

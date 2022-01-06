@@ -40,13 +40,25 @@ export const FormularioComponent = styled(Form)`
     font-family: Georgia, 'Times New Roman', serif;
   }
 
-  button {
-    padding: 7px 40px;
-    background: none;
-  }
-
   @media only screen and (max-width: 787px) {
     padding-right: 0px;
-    margin-bottom: ${(props) => props.theme.mobile};
+    margin-bottom: 40px;
+  }
+`
+
+export const Button = styled.button`
+  padding: 7px 40px;
+  background: none;
+  border: 3px solid var(--yellow);
+  color: var(--yellow);
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    color: ${(props) => props.theme.color};
+    border-color: ${(props) => props.theme.color};
   }
 `
