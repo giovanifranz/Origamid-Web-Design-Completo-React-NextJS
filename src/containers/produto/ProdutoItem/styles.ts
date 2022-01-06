@@ -119,3 +119,9 @@ export const ProdutoIcone = styled.div`
     padding: 41px 0;
   }
 `
+
+export const ProdutoImagem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
