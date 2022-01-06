@@ -1,5 +1,4 @@
-import { Foto } from '../../../components/Foto'
-import { PortfolioComponent, Container } from '../../../components'
+import { PortfolioComponent, Container, Foto } from '../../../components'
 export function Portfolio() {
   return (
     <PortfolioComponent>

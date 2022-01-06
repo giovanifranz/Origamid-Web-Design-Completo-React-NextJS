@@ -1,22 +1,5 @@
-import { useEffect, useState } from 'react'
 import styled from 'styled-components'
-
-interface ContainerProps {
-  as: 'section' | 'div'
-}
-
-function ContainerComponent({ as }: ContainerProps) {
-  const [Component, setComponent] = useState(<section />)
-
-  useEffect(() => {
-    if (as === 'section') {
-      setComponent(<section />)
-    } else {
-      setComponent(<div />)
-    }
-  }, [as])
-  return Component
-}
+import { ContainerComponent } from './Container'
 
 export const Container = styled(ContainerComponent)`
   width: 960px;
