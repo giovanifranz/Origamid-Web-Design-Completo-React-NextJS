@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 
-interface useIndexProps {
-  array: Array<any>
+interface useSlideProps {
+  array: Array<unknown>
   interval: number
 }
 
-export function useIndex({ array, interval }: useIndexProps) {
+export function useSlide({ array, interval }: useSlideProps) {
   const [slide, setSlide] = useState(array[0])
   const [index, setIndex] = useState(0)
 

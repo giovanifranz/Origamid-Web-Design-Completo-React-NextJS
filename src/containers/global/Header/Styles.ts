@@ -7,15 +7,6 @@ export const HeaderContainer = styled.header`
   background: var(--yellow);
   padding: 15px 0;
   z-index: 10;
-
-  @media only screen and (max-width: 787px) {
-    position: relative;
-    padding-bottom: 0px;
-
-    img {
-      margin: 0 auto 10px auto;
-    }
-  }
 `
 
 export const HeaderMenu = styled.nav`
@@ -66,5 +57,16 @@ export const HeaderMenu = styled.nav`
     ul li a.menu_ativo {
       border-color: var(--white);
     }
+  }
+`
+
+export const Logo = styled.div`
+  @media only screen and (max-width: 787px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0px;
+    margin: 0 auto 10px auto;
   }
 `

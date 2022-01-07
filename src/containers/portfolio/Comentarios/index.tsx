@@ -1,11 +1,11 @@
 import { Blockquote } from './Blockquote'
 import { quotes } from './quotes'
 import { Container } from '../../../components'
-import { useIndex } from '../../../hooks/useIndex'
-import { ComentariosProps } from './types'
+import { useSlide } from '../../../hooks/useSlide'
+import { ComentariosProps, BlockquoteProps } from './types'
 
 export function Comentarios({ interval }: ComentariosProps) {
-  const [slide] = useIndex({ array: quotes, interval })
+  const [slide] = useSlide({ array: quotes, interval }) as BlockquoteProps[]
 
   return (
     <Container
