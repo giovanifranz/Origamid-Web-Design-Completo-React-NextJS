@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BlockquoteComponent = styled.blockquote`
+export const StyledBlockquote = styled.blockquote`
   padding: 60px 0;
   max-width: 460px;
   margin: 0 auto;

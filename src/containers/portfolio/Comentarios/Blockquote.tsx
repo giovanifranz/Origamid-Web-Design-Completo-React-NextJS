@@ -1,15 +1,20 @@
-import { BlockquoteComponent } from './styles'
+import { StyledBlockquote } from './styles'
+import { memo } from 'react'
 
 interface BlockquoteProps {
   text: string
   author: string
 }
 
-export function Blockquote({ text, author }: BlockquoteProps) {
+export function BlockquoteComponent({ text, author }: BlockquoteProps) {
   return (
-    <BlockquoteComponent>
+    <StyledBlockquote>
       <p>“{text}”</p>
       <cite>{author}</cite>
-    </BlockquoteComponent>
+    </StyledBlockquote>
   )
 }
+
+export const Blockquote = memo(BlockquoteComponent, (prevProps, nextProps) => {
+  return Object.is(prevProps, nextProps)
+})
