@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import { ListItem } from './styles'
-interface SocialProps {
-  type: 'Facebook' | 'Instagram' | 'Twitter'
-}
+import { SocialProps } from './types'
 
 export function Social({ type }: SocialProps) {
   return (

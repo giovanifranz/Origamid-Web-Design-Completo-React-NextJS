@@ -1,9 +1,5 @@
 import Image from 'next/image'
-
-interface FotoProps {
-  type: 'Passeio' | 'Esporte' | 'Retro'
-  width: 460 | 940
-}
+import { FotoProps } from './types'
 
 export function Foto({ type, width }: FotoProps) {
   return (

@@ -3,7 +3,8 @@ import {
   PortfolioComponent,
   Subtitulo,
   Container,
-  Link
+  Link,
+  Call
 } from '../../components'
 
 export function Portfolio() {
@@ -22,12 +23,12 @@ export function Portfolio() {
             <Foto type="Esporte" width={940} />
           </li>
         </ul>
-        <div className="call">
+        <Call>
           <p>conheça mais o nosso portfólio</p>
           <Link href="/Portfolio" hover="white">
             Portfólio
           </Link>
-        </div>
+        </Call>
       </Container>
     </PortfolioComponent>
   )

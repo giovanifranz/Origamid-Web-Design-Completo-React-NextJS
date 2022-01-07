@@ -3,7 +3,7 @@ import { QuebraComponent } from './styles'
 
 export function Quebra() {
   return (
-    <QuebraComponent>
+    <QuebraComponent as="section">
       <Blockquote className="quote-externo">
         <p>
           “o verdadeiro segredo da felicidade está em ter um genuíno interesse

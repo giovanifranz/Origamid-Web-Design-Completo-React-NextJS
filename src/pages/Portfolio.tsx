@@ -15,8 +15,8 @@ export default function Portfolio() {
         title="portfolio"
         description="conheça os projetos que amamos mostrar"
       />
-      <Comentarios />
-      <PortfolioContainer />
+      <Comentarios interval={2000} />
+      <PortfolioContainer interval={2000} />
     </>
   )
 }

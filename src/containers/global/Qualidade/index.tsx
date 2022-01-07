@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Item } from './Item'
-import { Subtitulo, Link } from '../../../components'
+import { Subtitulo, Link, Call } from '../../../components'
 import { QualidadeContainer, BikecraftImg, QualidadeLista } from './styles'
 
 export function Qualidade() {
@@ -20,12 +20,12 @@ export function Qualidade() {
         <Item title="Design" />
         <Item title="Sustentabilidade" />
       </QualidadeLista>
-      <div className="call">
+      <Call>
         <p>conheça mais a nossa história</p>
         <Link href="/Sobre" hover="black">
           Sobre
         </Link>
-      </div>
+      </Call>
     </QualidadeContainer>
   )
 }

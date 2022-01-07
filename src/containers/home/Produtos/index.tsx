@@ -1,5 +1,5 @@
 import { Produto } from './Produto'
-import { Subtitulo, Link } from '../../../components'
+import { Subtitulo, Link, Call } from '../../../components'
 import { ProdutosContainer, ProdutosLista } from './styles'
 
 export function Produtos() {
@@ -12,12 +12,12 @@ export function Produtos() {
         <Produto type="Retro" />
       </ProdutosLista>
 
-      <div className="call">
+      <Call>
         <p>clique aqui e veja os detalhes dos produtos</p>
         <Link href="/Produtos" hover="black">
           Produtos
         </Link>
-      </div>
+      </Call>
     </ProdutosContainer>
   )
 }

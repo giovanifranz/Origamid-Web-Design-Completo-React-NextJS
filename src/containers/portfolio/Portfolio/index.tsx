@@ -1,32 +1,16 @@
-import { PortfolioComponent, Container, Foto } from '../../../components'
-export function Portfolio() {
+import { PortfolioComponent } from '../../../components'
+import { useIndex } from '../../../hooks/useIndex'
+import { Slide } from './Slide'
+import { params } from './params'
+
+import { SlideProps, PortfolioProps } from './types'
+
+export function Portfolio({ interval }: PortfolioProps) {
+  const [slide] = useIndex({ array: params, interval }) as SlideProps[]
+
   return (
     <PortfolioComponent>
-      <Container as="div" data-slide="portfolio">
-        <ul className="portfolio_lista">
-          <li className="grid-8">
-            <Foto type="Retro" width={460} />
-          </li>
-          <li className="grid-8">
-            <Foto type="Passeio" width={460} />
-          </li>
-          <li className="grid-16">
-            <Foto type="Esporte" width={940} />
-          </li>
-        </ul>
-
-        <ul className="portfolio_lista">
-          <li className="grid-8">
-            <Foto type="Retro" width={460} />
-          </li>
-          <li className="grid-8">
-            <Foto type="Passeio" width={460} />
-          </li>
-          <li className="grid-16">
-            <Foto type="Esporte" width={940} />
-          </li>
-        </ul>
-      </Container>
+      <Slide {...slide} />
     </PortfolioComponent>
   )
 }

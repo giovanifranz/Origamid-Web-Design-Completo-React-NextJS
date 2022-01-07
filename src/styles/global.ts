@@ -44,16 +44,6 @@ img {
 	max-width: 100%;
 }
 
-.call {
-	padding-top: 40px;
-	text-align: center;
-	clear: both;
-}
-
-.call p{
-	margin-bottom: 20px;
-}
-
 .nao-aparece {
 	visibility: hidden;
 	position: absolute;
