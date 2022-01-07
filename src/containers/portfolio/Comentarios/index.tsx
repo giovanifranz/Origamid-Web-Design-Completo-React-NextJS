@@ -1,6 +1,31 @@
 import { Blockquote } from './Blockquote'
+import { quotes } from './quotes'
 import { Container } from '../../../components'
+import { useEffect, useState } from 'react'
+
+interface ComentarioProps {
+  text: string
+  author: string
+}
+
 export function Comentarios() {
+  const [comentario, setComentario] = useState(quotes[0])
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const newSlideIndex = index >= quotes.length - 1 ? 0 : index + 1
+
+      setIndex(newSlideIndex)
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  })
+
+  useEffect(() => {
+    setComentario(quotes[index])
+  }, [index])
+
   return (
     <Container
       as="section"
@@ -8,26 +33,7 @@ export function Comentarios() {
       data-slide="quote"
       data-anime="1200"
     >
-      <Blockquote
-        text="Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez
-          foi intensificar o meu amor por esta atividade. Recomendo à todos que
-          amo."
-        author="Barbara Moss"
-      />
-
-      <Blockquote
-        text="Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a
-        minha companheira mais fiel, nunca me traiu e está sempre a minha
-        disposição."
-        author="Jhony Rato"
-      />
-
-      <Blockquote
-        text="Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão
-        perdendo. A precisão é absurda e a velocidade transcendental. Nunca
-        vida nada igual."
-        author="Bernardo"
-      />
+      <Blockquote {...comentario} />
     </Container>
   )
 }
