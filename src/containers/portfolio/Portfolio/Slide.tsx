@@ -1,10 +1,11 @@
 import { Content, Foto } from '../../../components'
+import { fadeInFadeOut } from '../../../styles'
 import { SlideProps } from './types'
 import { memo } from 'react'
 
 export function SlideComponent({ firsCard, secondCard, bigCard }: SlideProps) {
   return (
-    <Content data-slide="portfolio">
+    <Content variants={fadeInFadeOut} initial="hidden" animate="visible">
       <ul className="portfolio_lista">
         <li className="grid-8">
           <Foto type={firsCard} width={460} />

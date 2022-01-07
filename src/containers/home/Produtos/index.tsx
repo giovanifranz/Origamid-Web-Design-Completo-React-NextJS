@@ -1,10 +1,14 @@
 import { Produto } from './Produto'
 import { Subtitulo, Link, Call } from '../../../components'
 import { ProdutosContainer, ProdutosLista } from './styles'
-
+import { containerVariants } from '../../../styles'
 export function Produtos() {
   return (
-    <ProdutosContainer>
+    <ProdutosContainer
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <Subtitulo>Produtos</Subtitulo>
       <ProdutosLista>
         <Produto type="Passeio" />

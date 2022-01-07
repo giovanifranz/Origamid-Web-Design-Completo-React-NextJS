@@ -1,6 +1,8 @@
 import { IntroInternContainer } from './styles'
 import { Content } from '../../../components'
 import { ThemeProvider } from 'styled-components'
+import { motion } from 'framer-motion'
+import { introVariants, childVariantsTopDown } from '../../../styles/variant'
 
 interface IntroInternProps {
   title: 'portfolio' | 'produtos' | 'contato' | 'sobre'
@@ -15,28 +17,11 @@ export function IntroIntern({ title, description }: IntroInternProps) {
   return (
     <ThemeProvider theme={theme}>
       <IntroInternContainer>
-        <Content
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: '-100%',
-              x: 0
-            },
-            visible: {
-              opacity: 1,
-              y: 0,
-              x: 0,
-              transition: {
-                type: 'tween',
-                duration: 1.2
-              }
-            }
-          }}
-          initial="hidden"
-          animate="visible"
-        >
-          <h1>{title === 'portfolio' ? 'portfólio' : title}</h1>
-          <p>{description}</p>
+        <Content variants={introVariants} initial="hidden" animate="visible">
+          <motion.h1 variants={childVariantsTopDown}>
+            {title === 'portfolio' ? 'portfólio' : title}
+          </motion.h1>
+          <motion.p variants={childVariantsTopDown}>{description}</motion.p>
         </Content>
       </IntroInternContainer>
     </ThemeProvider>

@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Header, Footer, Quebra } from '../containers/global'
-import { GlobalStyle } from '../styles/global'
+import { GlobalStyle } from '../styles'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

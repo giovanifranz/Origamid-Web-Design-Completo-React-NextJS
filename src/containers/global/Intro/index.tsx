@@ -1,14 +1,14 @@
 import { IntroContainer } from './styles'
 import { Blockquote, Content, Link } from '../../../components'
 import { motion } from 'framer-motion'
-import { variants, childVariantsTopDown } from '../../../utils/variant'
+import { introVariants, childVariantsTopDown } from '../../../styles'
 
 export function Intro() {
   const MotionBlockquote = motion(Blockquote)
   const MotionLink = motion(Link)
   return (
     <IntroContainer>
-      <Content variants={variants} initial="hidden" animate="visible">
+      <Content variants={introVariants} initial="hidden" animate="visible">
         <motion.h1 variants={childVariantsTopDown}>
           Bicicletas Feitas a Mão
         </motion.h1>

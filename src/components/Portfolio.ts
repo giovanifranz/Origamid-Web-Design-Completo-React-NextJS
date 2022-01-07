@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-
-export const PortfolioComponent = styled.section`
+import { motion } from 'framer-motion'
+export const PortfolioComponent = styled(motion.section)`
   width: 100%;
   background: var(--black);
   padding: 40px 0;

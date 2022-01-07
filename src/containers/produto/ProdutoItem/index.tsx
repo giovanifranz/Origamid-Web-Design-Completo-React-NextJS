@@ -5,6 +5,7 @@ import {
   ProdutoIcone,
   ProdutoImagem
 } from './styles'
+import { containerVariants } from '../../../styles'
 
 interface ProdutoItemProps {
   type: 'esporte' | 'passeio' | 'retro'
@@ -12,7 +13,11 @@ interface ProdutoItemProps {
 
 export function ProdutoItem({ type }: ProdutoItemProps) {
   return (
-    <PordutoItemContainer>
+    <PordutoItemContainer
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="grid-11">
         <ProdutoImagem>
           <Image
