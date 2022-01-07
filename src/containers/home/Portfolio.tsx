@@ -2,7 +2,7 @@ import {
   Foto,
   PortfolioComponent,
   Subtitulo,
-  Container,
+  Content,
   Link,
   Call
 } from '../../components'
@@ -10,7 +10,7 @@ import {
 export function Portfolio() {
   return (
     <PortfolioComponent>
-      <Container as="div">
+      <Content>
         <Subtitulo>Portfólio</Subtitulo>
         <ul className="portfolio_lista">
           <li className="grid-8">
@@ -29,7 +29,7 @@ export function Portfolio() {
             Portfólio
           </Link>
         </Call>
-      </Container>
+      </Content>
     </PortfolioComponent>
   )
 }

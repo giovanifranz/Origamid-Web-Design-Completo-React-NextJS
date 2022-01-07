@@ -5,7 +5,7 @@ import { QualidadeContainer, BikecraftImg, QualidadeLista } from './styles'
 
 export function Qualidade() {
   return (
-    <QualidadeContainer as="section">
+    <QualidadeContainer>
       <Subtitulo>Qualidade</Subtitulo>
       <BikecraftImg>
         <Image

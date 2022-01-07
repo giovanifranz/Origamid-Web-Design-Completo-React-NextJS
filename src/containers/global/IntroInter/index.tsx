@@ -1,6 +1,7 @@
 import { IntroInternContainer } from './styles'
-import { Container } from '../../../components'
+import { Content } from '../../../components'
 import { ThemeProvider } from 'styled-components'
+
 interface IntroInternProps {
   title: 'portfolio' | 'produtos' | 'contato' | 'sobre'
   description: string
@@ -14,14 +15,29 @@ export function IntroIntern({ title, description }: IntroInternProps) {
   return (
     <ThemeProvider theme={theme}>
       <IntroInternContainer>
-        <Container as="div">
-          <h1 data-anime="400" className="fadeInDown">
-            {title === 'portfolio' ? 'portfólio' : title}
-          </h1>
-          <p data-anime="800" className="fadeInDown">
-            {description}
-          </p>
-        </Container>
+        <Content
+          variants={{
+            hidden: {
+              opacity: 0,
+              y: '-100%',
+              x: 0
+            },
+            visible: {
+              opacity: 1,
+              y: 0,
+              x: 0,
+              transition: {
+                type: 'tween',
+                duration: 1.2
+              }
+            }
+          }}
+          initial="hidden"
+          animate="visible"
+        >
+          <h1>{title === 'portfolio' ? 'portfólio' : title}</h1>
+          <p>{description}</p>
+        </Content>
       </IntroInternContainer>
     </ThemeProvider>
   )

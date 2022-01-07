@@ -3,7 +3,7 @@ import { ContatoContainer, ContratoDados } from './styles'
 
 export function Contato() {
   return (
-    <ContatoContainer as="section" className="fadeInDown" data-anime="1200">
+    <ContatoContainer>
       <Formulario page="contato" />
       <ContratoDados className="grid-8">
         <h3>Dados</h3>

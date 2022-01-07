@@ -8,12 +8,7 @@ export function Comentarios({ interval }: ComentariosProps) {
   const [slide] = useSlide({ array: quotes, interval }) as BlockquoteProps[]
 
   return (
-    <Container
-      as="section"
-      className="fadeInDown"
-      data-slide="quote"
-      data-anime="1200"
-    >
+    <Container>
       <Blockquote {...slide} />
     </Container>
   )

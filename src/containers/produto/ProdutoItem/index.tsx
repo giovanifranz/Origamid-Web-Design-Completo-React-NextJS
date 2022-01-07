@@ -12,7 +12,7 @@ interface ProdutoItemProps {
 
 export function ProdutoItem({ type }: ProdutoItemProps) {
   return (
-    <PordutoItemContainer as="section">
+    <PordutoItemContainer>
       <div className="grid-11">
         <ProdutoImagem>
           <Image

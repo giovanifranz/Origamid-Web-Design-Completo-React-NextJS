@@ -1,10 +1,10 @@
-import { Container, Foto } from '../../../components'
+import { Content, Foto } from '../../../components'
 import { SlideProps } from './types'
 import { memo } from 'react'
 
 export function SlideComponent({ firsCard, secondCard, bigCard }: SlideProps) {
   return (
-    <Container as="div" data-slide="portfolio">
+    <Content data-slide="portfolio">
       <ul className="portfolio_lista">
         <li className="grid-8">
           <Foto type={firsCard} width={460} />
@@ -16,7 +16,7 @@ export function SlideComponent({ firsCard, secondCard, bigCard }: SlideProps) {
           <Foto type={bigCard} width={940} />
         </li>
       </ul>
-    </Container>
+    </Content>
   )
 }
 
