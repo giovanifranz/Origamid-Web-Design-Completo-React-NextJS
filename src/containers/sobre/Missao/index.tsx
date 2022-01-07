@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import { SubtituloInterno } from '../../../components'
+import { fadeInFadeOut } from '../../../styles'
 import { MissaoContainer, FotoEquipe } from './styles'
 
 export function Missao() {
   return (
-    <MissaoContainer>
+    <MissaoContainer
+      variants={fadeInFadeOut}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="grid-10">
         <SubtituloInterno>História, Missão e Visão</SubtituloInterno>
         <p>

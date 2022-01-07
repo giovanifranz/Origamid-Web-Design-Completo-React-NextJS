@@ -1,9 +1,14 @@
 import { Formulario, Social } from '../../../components'
 import { ContatoContainer, ContratoDados } from './styles'
+import { fadeInFadeOut } from '../../../styles'
 
 export function Contato() {
   return (
-    <ContatoContainer>
+    <ContatoContainer
+      variants={fadeInFadeOut}
+      initial="hidden"
+      animate="visible"
+    >
       <Formulario page="contato" />
       <ContratoDados className="grid-8">
         <h3>Dados</h3>
