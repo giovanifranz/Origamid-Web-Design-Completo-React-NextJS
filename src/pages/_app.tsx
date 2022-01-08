@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
         />
-        <meta property="og:url" content="http://bikcraft.com/produtos.html" />
         <meta
-          property="og:image"
-          content="http://bikcraft.com/img/og-image.png"
+          property="og:url"
+          content="https://origamid-web-design-completo.vercel.app/Produtos"
         />
+        <meta property="og:image" content="/og-image.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
