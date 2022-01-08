@@ -26,6 +26,6 @@ export const IntroInternContainer = styled.section`
   }
 
   @media only screen and (max-width: 787px) {
-    margin-top: 280px;
+    margin-top: 240px;
   }
 `

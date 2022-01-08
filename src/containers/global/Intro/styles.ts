@@ -16,9 +16,9 @@ export const IntroContainer = styled.section`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 787px) {
-    margin-top: 0px;
+    margin-top: 240px;
     padding-top: 40px;
-    background: url('../img/bg-mobile.jpg') no-repeat center;
+    background: url('/img/bg-mobile.jpg') no-repeat center;
     background-size: cover;
 
     h1 {
