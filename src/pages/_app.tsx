@@ -27,7 +27,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           property="og:url"
           content="https://origamid-web-design-completo.vercel.app/Produtos"
         />
-        <meta property="og:image" content="/og-image.png" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/giovanifranz/Origamid-Web-Design-Completo-React-NextJS/main/public/img/og-image.png"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
