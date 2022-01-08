@@ -14,5 +14,5 @@ Tomei a liberdade depois de um ano de refazer o projeto desenvolvido pelo profes
 - Formik
 - Sendgrid
 
-Tem tenho que melhorar aindas as animações mas farei isso em outro momento.
+Tem tenho que melhorar as animações mas farei isso em outro momento.
 
