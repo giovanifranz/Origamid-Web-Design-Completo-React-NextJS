@@ -10,7 +10,7 @@ export function Link({ hover, children, href }: AnchorProps) {
   return (
     <ThemeProvider theme={theme}>
       <NextLink href={href} passHref>
-        <StyledAnchor> {children}</StyledAnchor>
+        <StyledAnchor>{children}</StyledAnchor>
       </NextLink>
     </ThemeProvider>
   )
